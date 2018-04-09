@@ -7,13 +7,8 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <!-- [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}" -->
-  <p>Hello, user</p>
-  <div #map id="map"></div>
-  <!-- 
-  <button ion-button secondary menuToggle>Pilgrims</button><br>
-  <button ion-button secondary menuToggle>Mutawif</button><br>
-  <button ion-button secondary menuToggle>Digital Map</button> -->
-
+<ion-content>
+  <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
 </ion-content>
