@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { StatusBar } from '@ionic-native/status-bar';
 
 /**
  * Generated class for the PilotPage page.
@@ -14,8 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PilotPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams, private statusBar: StatusBar) {
+    this.statusBar.overlaysWebView(false);
+    this.statusBar.backgroundColorByHexString('#40798C');
+   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PilotPage');
