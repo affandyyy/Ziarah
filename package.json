@@ -12,6 +12,7 @@
     "ionic:serve": "ionic-app-scripts serve"
   },
   "dependencies": {
+    "@agm/core": "^1.0.0-beta.2",
     "@angular/animations": "5.2.9",
     "@angular/common": "5.2.9",
     "@angular/compiler": "5.2.9",
@@ -44,8 +45,8 @@
     "plugins": {
       "cordova-plugin-geolocation": {},
       "cordova-plugin-googlemaps": {
-        "API_KEY_FOR_ANDROID": "AIzaSyBi9OlM-CbJrMUtnehlwvEczKWE8-mKNFI",
-        "API_KEY_FOR_IOS": "AIzaSyBi9OlM-CbJrMUtnehlwvEczKWE8-mKNFI"
+        "API_KEY_FOR_ANDROID": "AIzaSyDf9Ck2yCiPOfOrJSxWCXnBoCsAeUkjYrw",
+        "API_KEY_FOR_IOS": "AIzaSyDf9Ck2yCiPOfOrJSxWCXnBoCsAeUkjYrw"
       }
     }
   }

@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 // Maps
 import { Geolocation } from '@ionic-native/geolocation';
 import { AgmCoreModule } from '@agm/core';
+import { GoogleMaps } from '@ionic-native/google-maps'
 
 
 import { MyApp } from './app.component';
@@ -26,9 +27,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDf9Ck2yCiPOfOrJSxWCXnBoCsAeUkjYrw'
-    })
+    AgmCoreModule.forRoot({apiKey: 'AIzaSyDf9Ck2yCiPOfOrJSxWCXnBoCsAeUkjYrw'})
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,7 +40,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     StatusBar,
     SplashScreen,
     Geolocation,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    GoogleMaps
   ]
 })
-export class AppModule {}
+export class AppModule { }
